@@ -10,9 +10,9 @@
 
 ## 💻 Projeto
 
-De 30 de agosto a 6 de setembro de 2021 aconteceu a Jornada .NET Direto ao Ponto conduzida pelo [Luis_dev](https://www.instagram.com/luis_dev_ig) - uma semana de aulas ONLINE, ao vivo e gratuitas que ajudaram a avançar na carreira de programador, com uma metodologia eficiente e direta ao ponto.
+DevReviews é uma aplicação responsável por gerenciar avaliações de produtos de um e-commerce.
 
-Projeto desenvolvido foi o `DevReviews` aplicação responsável por gerenciar avaliações de produtos de um e-commerce.
+Este projeto foi desenvolvido durante a Jornada .NET Direto ao Ponto conduzida pelo [Luis_dev](https://www.instagram.com/luis_dev_ig), apresentada dos dias 30 de agosto a 6 de setembro de 2021.
 
 ## 📚 Funcionalidades
 - Cadastro, Listagem, Detalhes, Atualização e Remoção de Produto.

@@ -9,11 +9,13 @@ using DevReviews.API.Persistence.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace DevReviews.API.Controllers
 {
   [ApiController]
   [Route("api/[controller]")]
+  [SwaggerTag("Representa os endpoints de produtos")]
   public class ProductsController : ControllerBase
   {
     private readonly IProductRepository _repository;
@@ -27,8 +29,11 @@ namespace DevReviews.API.Controllers
 
 
     /// <summary>
-    /// Obtêm todos os produtos 
+    /// Obter todos os produtos 
     /// </summary>
+    /// <remarks>
+    /// Obtém uma lista de todos os produtos
+    /// </remarks>
     /// <returns>retorna todos os produtos cadastrado</returns>
     [HttpGet]
     public async Task<IActionResult> GetAll()
@@ -40,8 +45,11 @@ namespace DevReviews.API.Controllers
     }
 
     /// <summary>
-    /// Obtêm produto pelo id
+    /// Obter produto pelo id
     /// </summary>
+    /// <remarks>
+    /// Obtém um produto informando o ID do produto
+    /// </remarks>
     /// <param name="id">id do produto</param>
     /// <returns>retorna os detalhes do produto</returns>
     /// <response code="200">Sucesso e retorna o produto buscado</response>
@@ -64,7 +72,7 @@ namespace DevReviews.API.Controllers
     /// Cadastro de Produto
     /// </summary>    
     /// <remarks>
-    /// Requisição:
+    /// Exemplo de requisição:
     ///
     ///     POST /Products
     ///     {
@@ -96,7 +104,7 @@ namespace DevReviews.API.Controllers
     /// Atualiza dados de um produto
     /// </summary>
     /// <remarks>
-    /// Requisição:
+    /// Exemplo de requisição:
     ///
     ///     PUT /Products/1
     ///     {    

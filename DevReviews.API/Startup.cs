@@ -16,6 +16,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Any;
+using Microsoft.OpenApi.Interfaces;
 using Microsoft.OpenApi.Models;
 
 namespace DevReviews.API
@@ -47,19 +49,30 @@ namespace DevReviews.API
       {
         c.SwaggerDoc("v1", new OpenApiInfo
         {
-          Title = "DevReviews.API",
+          Title = "DevReviews",
+          Description = "Aplicação responsável por gerenciar avaliações de produtos de um e-commerce.",
           Version = "v1",
           Contact = new OpenApiContact
           {
             Name = "Lucas Faria",
             Email = "lucasfsilva94@hotmail.com",
             Url = new Uri("https://github.com/lucasfsilva94")
+          },
+          Extensions = new Dictionary<string, IOpenApiExtension>
+          {
+            {"x-logo", new OpenApiObject
+              {
+                  {"url", new OpenApiString("https://user-images.githubusercontent.com/22107794/132960600-bf0a778b-9b48-40b5-8614-4294fcc4ed32.png")},
+                  {"altText", new OpenApiString("DevReviews API")}
+              }
+            }
           }
         });
 
         var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
         var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-        c.IncludeXmlComments(xmlPath);
+        c.IncludeXmlComments(xmlPath, true);
+        c.EnableAnnotations();
       });
     }
 
@@ -72,7 +85,12 @@ namespace DevReviews.API
       }
 
       app.UseSwagger();
-      app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DevReviews.API v1"));
+      app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DevReviews"));
+      app.UseReDoc(c =>
+      {
+        c.DocumentTitle = "DevReviews API - Documentation";
+        c.SpecUrl = "/swagger/v1/swagger.json";
+      });
 
       app.UseHttpsRedirection();
 

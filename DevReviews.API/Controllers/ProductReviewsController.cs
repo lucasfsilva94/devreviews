@@ -8,11 +8,14 @@ using DevReviews.API.Persistence.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace DevReviews.API.Controllers
 {
+
   [ApiController]
   [Route("api/Products/{productId}/ProductReviews")]
+  [SwaggerTag("Representa os endpoints de review dos produtos")]
   public class ProductReviewsController : ControllerBase
   {
     private readonly IProductRepository _repository;
@@ -24,13 +27,16 @@ namespace DevReviews.API.Controllers
     }
 
     /// <summary>
-    /// Obtêm a review do produto pelo id
+    /// Obter a review do produto pelo id
     /// </summary>
+    /// <remarks>
+    /// Obtém a review de um produto informando o ID do produto
+    /// </remarks>
     /// <param name="productId">id do produto</param>
     /// <param name="id">id da review do produto</param>
     /// <returns>retorna os dados da review do produto</returns>    
     /// <response code="200">Sucesso e retorna a review do produto buscado</response>
-    /// <response code="400">Dados Inválidos</response>
+    /// <response code="400">Dados Inválidos</response>    
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -49,7 +55,7 @@ namespace DevReviews.API.Controllers
     /// Cadastro da Review do Produto
     /// </summary>    
     /// <remarks>
-    /// Requisição:
+    /// Exemplo de requisição:
     ///
     ///     POST /​Products​/1​/ProductReviews
     ///     {

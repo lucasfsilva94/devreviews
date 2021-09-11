@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" src="https://user-images.githubusercontent.com/22107794/132961066-47d7eedc-702a-44f6-b9fd-89a6cee36cbc.png" />
+    <img alt="DevReviews" src="https://user-images.githubusercontent.com/22107794/132961965-3c257bf1-7c2b-4b18-b189-cb13b5fd07f6.png" />
 </h1>
 
 <br>

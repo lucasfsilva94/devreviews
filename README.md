@@ -3,10 +3,20 @@
 </p>
 
 <h1 align="center">
-    <img alt="Letmeask" src="https://user-images.githubusercontent.com/22107794/132961066-47d7eedc-702a-44f6-b9fd-89a6cee36cbc.png" />
+    <img alt="DevReviews" src="https://user-images.githubusercontent.com/22107794/132961965-3c257bf1-7c2b-4b18-b189-cb13b5fd07f6.png" />
 </h1>
 
 <br>
+
+## 💻 Projeto
+
+DevReviews é uma aplicação responsável por gerenciar avaliações de produtos de um e-commerce.
+
+Este projeto foi desenvolvido durante a Jornada .NET Direto ao Ponto conduzida pelo [Luis_dev](https://www.instagram.com/luis_dev_ig), apresentada dos dias 30 de agosto a 6 de setembro de 2021.
+
+## 📚 Funcionalidades
+- Cadastro, Listagem, Detalhes, Atualização e Remoção de Produto.
+- Cadastro e Detalhes de uma avaliação
 
 ## 🧪 Tecnologias
 
@@ -25,10 +35,23 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Programação Orientada a Objetos
 - Padrão Repository
 - Logs com Serilog
+- Documentação com Swagger e ReDoc
 - Publicação na nuvem com Azure App Service
 
 
-## 🚀 Como executar
+## 🚀 Demo
+Demostração da aplicação API REST
+
+### ReDoc
+https://devreviews-jornada.azurewebsites.net/api-docs
+
+### Swagger
+https://devreviews-jornada.azurewebsites.net/swagger
+
+## 📘 Documentação
+Todo o processo de desenvolvimento foi documentado no Notion. Você pode acessar através [desse link](https://smoggy-panther-b3a.notion.site/2-edi-o-Jornada-NET-Direto-ao-Ponto-4edb592dfba84fa9b4c45061b290f952)
+
+## ⌨ Como executar
 
 <details>
 <summary>Visual Studio Code</summary>
@@ -59,20 +82,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 4. Aperte **F5**.
 
 </details>
-
-## 💻 Projeto
-
-De 30 de agosto a 6 de setembro de 2021 aconteceu a Jornada .NET Direto ao Ponto conduzida pelo [Luis_dev](https://www.instagram.com/luis_dev_ig) - uma semana de aulas ONLINE, ao vivo e gratuitas que ajudaram a avançar na carreira de programador, com uma metodologia eficiente e direta ao ponto.
-
-Projeto desenvolvido foi o `DevReviews` aplicação responsável por gerenciar avaliações de produtos de um e-commerce.
-
-
-## 📚 Funcionalidades
-- Cadastro, Listagem, Detalhes, Atualização e Remoção de Produto.
-- Cadastro e Detalhes de uma avaliação
-
-## 📘 Documentação
-Todo o processo de desenvolvimento foi documentado no Notion. Você pode acessar através [desse link](https://smoggy-panther-b3a.notion.site/2-edi-o-Jornada-NET-Direto-ao-Ponto-4edb592dfba84fa9b4c45061b290f952)
 
 ---
 

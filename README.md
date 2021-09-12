@@ -35,11 +35,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Programação Orientada a Objetos
 - Padrão Repository
 - Logs com Serilog
+- Documentação com Swagger e ReDoc
 - Publicação na nuvem com Azure App Service
 
 
 ## 🚀 Demo
-Demostração da aplicação Web API
+Demostração da aplicação API REST
 
 ### ReDoc
 https://devreviews-jornada.azurewebsites.net/api-docs

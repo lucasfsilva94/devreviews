@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [AutoMapper](https://automapper.org/)
 - [Serilog](https://serilog.net/)
 
-## 🎉 Práticas
+## ✨ Práticas
 
 - Injeção de Dependência
 - Programação Orientada a Objetos

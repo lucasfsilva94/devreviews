@@ -4,15 +4,15 @@ using DevReviews.API.Models;
 
 namespace DevReviews.API.Profiles
 {
-  public class ProductProfile : Profile
-  {
-    public ProductProfile()
+    public class ProductProfile : Profile
     {
-      CreateMap<ProductReview, ProductReviewViewModel>();
-      CreateMap<ProductReview, ProductReviewDetailsViewModel>();
+        public ProductProfile()
+        {
+            CreateMap<ProductReview, ProductReviewViewModel>();
+            CreateMap<ProductReview, ProductReviewDetailsViewModel>();
 
-      CreateMap<Product, ProductViewModel>();
-      CreateMap<Product, ProductDetailsViewModel>();
+            CreateMap<Product, ProductViewModel>();
+            CreateMap<Product, ProductDetailsViewModel>();
+        }
     }
-  }
 }

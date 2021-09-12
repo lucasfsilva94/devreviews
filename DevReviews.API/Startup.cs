@@ -61,12 +61,12 @@ namespace DevReviews.API
                     },
                     Extensions = new Dictionary<string, IOpenApiExtension>
                 {
-            {"x-logo", new OpenApiObject
-              {
-                  {"url", new OpenApiString("https://user-images.githubusercontent.com/22107794/132960600-bf0a778b-9b48-40b5-8614-4294fcc4ed32.png")},
-                  {"altText", new OpenApiString("DevReviews API")}
-              }
-            }
+                    {"x-logo", new OpenApiObject
+                      {
+                          {"url", new OpenApiString("https://user-images.githubusercontent.com/22107794/132960600-bf0a778b-9b48-40b5-8614-4294fcc4ed32.png")},
+                          {"altText", new OpenApiString("DevReviews API")}
+                      }
+                    }
                 }
                 });
 

@@ -48,9 +48,6 @@ https://devreviews-jornada.azurewebsites.net/api-docs
 ### Swagger
 https://devreviews-jornada.azurewebsites.net/swagger
 
-## 📋 Arquivo Notion 
-Todo o processo de desenvolvimento foi documentado no Notion. Você pode acessar através [desse link](https://smoggy-panther-b3a.notion.site/2-edi-o-Jornada-NET-Direto-ao-Ponto-4edb592dfba84fa9b4c45061b290f952)
-
 ## ⌨ Como executar
 
 <details>
